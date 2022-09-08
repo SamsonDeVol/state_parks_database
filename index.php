@@ -22,7 +22,7 @@
 
 # Load new db and read from sql file
 $db = new SQLite3('database.db', SQLITE3_OPEN_CREATE | SQLITE3_OPEN_READWRITE);
-$db->query(file_get_contents('Part3_SQLSchema.sql'));
+$db->query(file_get_contents('schema.sql'));
 
 $result = 0;
 # Basic table to display Parks entity
